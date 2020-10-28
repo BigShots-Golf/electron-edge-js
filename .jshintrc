@@ -4,7 +4,6 @@
 		"after": true,
 		"async": true,
 		"afterEach": true,
-		"afterEach": true,
 		"Backbone": true,
 		"before": true,
 		"beforeEach": true,

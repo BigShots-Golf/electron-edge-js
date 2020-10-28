@@ -1,57 +1,27 @@
 {
-  "name": "electron-edge-js",
-  "author": {
-    "name": "Tomasz Janczuk <tomasz@janczuk.org>",
-    "url": "http://tomasz.janczuk.org",
-    "twitter": "tjanczuk"
+  "name": "@BigShots-Golf/electron-edge-js",
+  "author": "Facet Digital",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
-  "version": "15.0.1",
+  "homepage": "https://github.com/BigShots-Golf/electron-edge-js",
+  "repository": "git@github.com:BigShots-Golf/electron-edge-js.git",
+  "version": "12.14.3",
   "description": "Edge.js: run .NET and Node.js in-process on Electron",
-  "tags": [
-    "owin",
-    "edge",
-    "net",
-    "clr",
-    "coreclr",
-    "c#",
-    "mono",
-    "managed",
-    ".net",
-    "electron"
-  ],
-  "keywords": [
-    "owin",
-    "edge",
-    "net",
-    "clr",
-    "coreclr",
-    "c#",
-    "mono",
-    "managed",
-    ".net",
-    "electron"
-  ],
   "main": "./lib/edge.js",
   "types": "electron-edge-js.d.ts",
   "engines": {
-    "node": ">= 6"
+    "node": ">= 12"
   },
-  "license": "Apache-2.0",
+  "private": "true",
+  "license": "UNLICENSED",
   "dependencies": {
     "edge-cs": "1.2.1",
-    "nan": "^2.14.0"
+    "nan": "2.14.2"
   },
   "devDependencies": {
-    "mocha": "5.1.1",
-    "mocha-junit-reporter": "^1.17.0"
-  },
-  "homepage": "https://github.com/agracio/electron-edge-js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:agracio/electron-edge-js.git"
-  },
-  "bugs": {
-    "url": "http://github.com/agracio/electron-edge-js/issues"
+    "mocha": "8.2.0",
+    "mocha-junit-reporter": "2.0.0"
   },
   "scripts": {
     "install": "node tools/install.js",

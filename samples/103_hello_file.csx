@@ -1,4 +1,3 @@
-async (input) => 
-{ 
-	return ".NET welcomes " + input.ToString(); 
+async (input) => {
+  return ".NET welcomes " + input.ToString(); 
 }

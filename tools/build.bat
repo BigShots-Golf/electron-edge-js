@@ -46,16 +46,7 @@ if %ERRORLEVEL% neq 0 (
 
 :gyp
 
-if "%3" equ "12.16.3" (
-  SET target=v10.0.0
-)
-else if "%3" equ "15.0.1" (
-  SET target=v10.1.5
-)
-else (
-  echo edge-electron-js does not support Node.js %3.
-  exit /b -1
-)
+SET target=v10.1.5
 
 echo Building edge.node %FLAVOR% for node.js %2 v%3
 set NODEEXE=%DESTDIR%\node.exe
@@ -66,7 +57,7 @@ if not exist "%GYP%" (
   exit /b -1
 )
 
-"%NODEEXE%" "%GYP%" configure build --target=%target% --dist-url=https://atom.io/download/electron --msvs_version=2017 -%FLAVOR%
+"%NODEEXE%" "%GYP%" configure build --target=%target% --dist-url=https://electronjs.org/headers -%FLAVOR%
 if %ERRORLEVEL% neq 0 (
   echo Error building edge.node %FLAVOR% for node.js %2 v%3
   exit /b -1

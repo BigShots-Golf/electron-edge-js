@@ -46,3 +46,12 @@ Simple app that shows how to work with .NET Core using compiled C# libraries. [e
 ## Documentation
 
 For full documentation please see see original [edge-js](https://github.com/agracio/edge-js) repo.
+
+## Building
+
+To build the app for the latest Node version, 15.0.1 as of 2020-10-28, with the latest Electron version of 10.1.5,
+using Visual Studio 2019 enter the following in the base directory of the application:
+
+```bash
+node-gyp configure build --target=v10.1.5 --dist-url=https://electronjs.org/headers -v15.0.1
+```

@@ -5,7 +5,7 @@ This is a fork of [edge-js](https://github.com/agracio/edge-js) adapted to suppo
 Compatible with
 
     - Electron 10.x - Node.js v12.16.3
-    - Electron 10.x - Node.js v12.16.3
+    - Electron 10.x - Node.js v15.0.1
 
 Usage is the same as edge or edge-js, replace `require('edge')` or `require('edge-js')` with `require('electron-edge-js')`:
 

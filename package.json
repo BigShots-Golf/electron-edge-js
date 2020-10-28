@@ -1,19 +1,18 @@
 {
   "name": "@BigShots-Golf/electron-edge-js",
+  "version": "15.0.1",
   "author": "Facet Digital",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "homepage": "https://github.com/BigShots-Golf/electron-edge-js",
   "repository": "git@github.com:BigShots-Golf/electron-edge-js.git",
-  "version": "12.14.3",
   "description": "Edge.js: run .NET and Node.js in-process on Electron",
   "main": "./lib/edge.js",
   "types": "electron-edge-js.d.ts",
   "engines": {
     "node": ">= 12"
   },
-  "private": "true",
   "license": "UNLICENSED",
   "dependencies": {
     "edge-cs": "1.2.1",

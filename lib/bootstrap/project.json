@@ -17,6 +17,7 @@
   },
 
   "buildOptions": {
-    "preserveCompilationContext": true
+    "preserveCompilationContext": true,
+    "copyLocalLockFileAssemblies": true,
   }
 }

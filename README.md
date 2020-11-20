@@ -47,6 +47,12 @@ Simple app that shows how to work with .NET Core using compiled C# libraries. [e
 
 For full documentation please see see original [edge-js](https://github.com/agracio/edge-js) repo.
 
+## Add new Node Version
+
+1. Update the Readme.md file with the latest version being used. Doing a find/replace of the current version is the easist way to ensure all documentation is updated.
+1. Open up the `lib/edge.js` file and go to the `versionMap` array which should start around line 15. Add the latest Node version to the array.
+1. Open up the `tools/buildall.bat` file and add the latest node version to the end of the prior release listed on line 2. For example, if you added 15.0.2 it would look like this: `"%~dp0\build.bat" release 12.16.3 15.0.1 15.0.2`
+
 ## Building
 
 To build the app for the latest Node version, 15.0.1 as of 2020-10-28, with the latest Electron version of 10.1.5,
@@ -54,6 +60,14 @@ using Visual Studio 2019 or VS Code, enter the following in the base directory o
 
 ```bash
 node-gyp configure build --target=v10.1.5 --dist-url=https://electronjs.org/headers -v15.0.1
+```
+
+### Changing Electron Version
+
+When you build the application, set the `--target` argument in the command to be the Electron version you want to build for. For example, to build for Electron 11.0.0 you would change the build command to be as follows:
+
+```bash
+node-gyp configure build --target=v11.0.0 --dist-url=https://electronjs.org/headers -v15.0.1
 ```
 
 ## Publish as Github Package

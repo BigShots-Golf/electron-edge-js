@@ -50,8 +50,27 @@ For full documentation please see see original [edge-js](https://github.com/agra
 ## Building
 
 To build the app for the latest Node version, 15.0.1 as of 2020-10-28, with the latest Electron version of 10.1.5,
-using Visual Studio 2019 enter the following in the base directory of the application:
+using Visual Studio 2019 or VS Code, enter the following in the base directory of the application:
 
 ```bash
 node-gyp configure build --target=v10.1.5 --dist-url=https://electronjs.org/headers -v15.0.1
 ```
+
+## Publish as Github Package
+
+1. Open up a terminal to the root directory of this project
+1. Run the build command above from the **Building** section. If the build succeeds, move on to the next step.
+1. Enter the following command to publish the package:
+
+```bash
+yarn publish
+```
+
+If you do not have yarn installed, use npm
+
+```bash
+npm publish
+```
+
+1. Follow the prompts to publish the package
+1. Commit the package.json file if you updated the package version

@@ -73,18 +73,18 @@ node-gyp configure build --target=v11.0.0 --dist-url=https://electronjs.org/head
 ## Publish as Github Package
 
 1. Open up a terminal to the root directory of this project
-2. Run the build command above from the **Building** section. If the build succeeds, move on to the next step.
-3. Enter the following command to publish the package:
+1. Run the build command above from the **Building** section. If the build succeeds, move on to the next step.
+1. Enter the following command to publish the package:
 
-```bash
-yarn publish
-```
+    ```bash
+    yarn publish
+    ```
 
-If you do not have yarn installed, use npm
+    If you do not have yarn installed, use npm
 
-```bash
-npm publish
-```
+    ```bash
+    npm publish
+    ```
 
-4. Follow the prompts to publish the package
-5. Commit the package.json file if you updated the package version
+1. Follow the prompts to publish the package
+1. Commit the package.json file if you updated the package version

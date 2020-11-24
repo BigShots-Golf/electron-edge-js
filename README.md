@@ -24,9 +24,19 @@ Usage is the same as edge or edge-js, replace `require('edge')` or `require('edg
     */});
     ```
 
-## Requirements (Windows)
+## Requirements
+
+### Windows Only
 
 You must install [Microsoft Visual C++ Redistributable (x86)](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+
+### All Platforms
+
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download)
+- NodeJS >= v15.0.1
+
+**NOTE:** Make sure the 3.1 SDK is the latest SDK on your machine. If you have a newer version, i.e. 5.0, you may run into build and/or runtime issues.
+**NOTE:** If you want to build for a specific version of NodeJS, you must have that version of Node installed on your computer.
 
 ## Why use `electron-edge-js`
 
@@ -55,8 +65,7 @@ For full documentation please see see original [edge-js](https://github.com/agra
 
 ## Building
 
-To build the app for the latest Node version, 15.0.1 as of 2020-10-28, with the latest Electron version of 10.1.5,
-using Visual Studio 2019 or VS Code, enter the following in the base directory of the application:
+To build the app for the latest Node version, 15.0.1 as of 2020-10-28, with Electron version 10.1.5, enter the following command in the base directory of the application:
 
 ```bash
 node-gyp configure build --target=v10.1.5 --dist-url=https://electronjs.org/headers -v15.0.1
